@@ -147,9 +147,20 @@ node scripts/gen-feedback.mjs   # regenerate src/data/feedback.json
 
 ## Verification
 
-The full scenario runs headless against Chrome 152 with `--enable-experimental-web-platform-features`, driving the tools through `document.modelContext.executeTool()`: boot registers eight tools, `propose_edits` rejects invalid values with a descriptive error, a rejected diff shows up in `get_proposal_status`, clicking into a cell withdraws `propose_edits`, `annotate` and `request_control` from `getTools()`, `request_control` blocks until the dialog is answered, `hand_back` withdraws itself, and state survives a reload.
+**In the ChatGPT desktop app** (GPT-5.6 Terra, built-in browser), driving the live URL end to end:
 
-Lighthouse's "Registered WebMCP tools" audit: _(screenshot added at submission)_.
+- The page registers eight tools at boot; ChatGPT lists them from `getTools()`, and the Live tools panel shows the same list because the browser implements `getTools()` and `toolchange`.
+- *"Show me everything about billing and put your cursor on it"* → `set_view`, `read_rows`, `focus_cells` with the reason "reviewing all Billing feedback". The table re-filters and the cursor lands on the rows.
+- *"Propose an area and a severity for the duplicate-charge reports"* → `propose_edits` with four edits, rendered as diffs. One rejected, three accepted by hand.
+- *"How did I do?"* → `get_proposal_status`. ChatGPT reported the one rejection and offered a reading of why ("an unverified social post; you prefer to leave the product area unset until it's corroborated").
+- *"Ask me for direct control first"* → `request_control` opened the dialog; the tool call waited 17 seconds for the click, resolved with `control: agent`, and `hand_back` appeared in the panel.
+- Clicking into a cell while ChatGPT held nothing withdrew `propose_edits`, `annotate` and `request_control` from the panel within a second, struck through, then restored them two seconds after the editor closed.
+
+**In Chrome 152** (`--enable-experimental-web-platform-features`), the full scenario runs headless through `document.modelContext.executeTool()`: strict validation errors, per-edit rejection reaching `get_proposal_status`, tool withdrawal on edit, the elicitation timeout path, `hand_back` withdrawing itself, and state surviving a reload.
+
+**Lighthouse** (agentic browsing audits, run against the live URL): "WebMCP tools registered" lists the eight boot-time tools with their schemas, "WebMCP schemas are valid" passes, accessibility 100.
+
+![Lighthouse: Registered WebMCP tools](docs/lighthouse-webmcp-tools.png)
 
 ## License
 
