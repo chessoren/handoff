@@ -50,7 +50,7 @@ export function ActivityLog() {
                 <span className="min-w-0 flex-1">
                   {e.tool && <span className={`font-mono ${e.kind === 'blocked' ? 'text-ink' : e.kind === 'call' || e.kind === 'result' ? 'text-agent' : 'text-ink-muted'}`}>{e.tool}</span>}
                   {e.tool && ' '}
-                  <span className={e.kind === 'blocked' ? 'font-medium' : e.kind === 'register' || e.kind === 'unregister' || e.kind === 'system' ? 'text-ink-muted' : ''}>
+                  <span className={e.kind === 'blocked' ? 'font-medium' : e.kind === 'register' || e.kind === 'unregister' || e.kind === 'system' ? 'font-mono text-[11px] text-ink-muted' : ''}>
                     {e.kind === 'call' ? 'called' : e.summary}
                   </span>
                   {e.durationMs !== undefined && <span className="ml-1 font-mono text-[10px] text-ink-muted">{e.durationMs}ms</span>}

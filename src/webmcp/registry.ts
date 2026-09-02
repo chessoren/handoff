@@ -96,26 +96,32 @@ async function reconcile(): Promise<void> {
   const want = desiredToolset(useStore.getState());
   const mc = modelContext();
 
+  const withdrawn: ToolName[] = [];
   for (const [name, ctrl] of controllers) {
     if (want.has(name)) continue;
     if ((inFlight.get(name) ?? 0) > 0) continue; // withdraw once it returns
     ctrl.abort();
     controllers.delete(name);
-    useStore.getState().appendLog({ kind: 'unregister', tool: name, summary: `${name} withdrawn` });
+    withdrawn.push(name);
   }
 
+  const registered: ToolName[] = [];
   for (const name of want) {
     if (controllers.has(name)) continue;
     const ctrl = new AbortController();
     controllers.set(name, ctrl);
     try {
       await mc.registerTool(instrumented(TOOL_DEFS[name]), { signal: ctrl.signal });
-      useStore.getState().appendLog({ kind: 'register', tool: name, summary: `${name} registered` });
+      registered.push(name);
     } catch (err) {
       controllers.delete(name);
-      useStore.getState().appendLog({ kind: 'system', tool: name, summary: `registerTool failed for ${name}: ${String(err)}` });
+      useStore.getState().appendLog({ kind: 'system', tool: name, summary: `registerTool failed: ${String(err)}` });
     }
   }
+
+  const log = useStore.getState().appendLog;
+  if (withdrawn.length) log({ kind: 'unregister', summary: `withdrawn: ${withdrawn.join(', ')}`, detail: { abort: withdrawn, exposed: registeredToolNames() } });
+  if (registered.length) log({ kind: 'register', summary: `registered: ${registered.join(', ')}`, detail: { registerTool: registered, exposed: registeredToolNames() } });
 }
 
 /** Serialised: overlapping calls coalesce into one trailing reconcile. */

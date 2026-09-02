@@ -5,6 +5,7 @@ import { DataTable } from './components/DataTable';
 import { Header } from './components/Header';
 import { LiveToolPanel } from './components/LiveToolPanel';
 import { ProposalBar } from './components/ProposalBar';
+import { RowInspector } from './components/RowInspector';
 import { UnsupportedBanner } from './components/UnsupportedBanner';
 import { ViewsPanel } from './components/ViewsPanel';
 import { useStore } from './store/useStore';
@@ -22,7 +23,7 @@ export default function App() {
     <div className="flex h-full min-h-0 flex-col">
       <Header />
       {!supported && <UnsupportedBanner />}
-      <div className="grid min-h-0 flex-1 grid-cols-[200px_minmax(0,1fr)_300px]">
+      <div className="grid min-h-0 flex-1 grid-cols-[172px_minmax(0,1fr)_256px] xl:grid-cols-[200px_minmax(0,1fr)_300px]">
         <aside className="flex min-h-0 flex-col overflow-y-auto border-r border-rule bg-ground">
           <ViewsPanel />
           <LiveToolPanel />
@@ -30,8 +31,9 @@ export default function App() {
             Ten tools on <code className="font-mono">document.modelContext</code>. Write tools withdraw while you edit.
           </p>
         </aside>
-        <main className="min-h-0 min-w-0">
+        <main className="flex min-h-0 min-w-0 flex-col">
           <DataTable />
+          <RowInspector />
         </main>
         <aside className="flex min-h-0 flex-col border-l border-rule bg-ground">
           <ActivityLog />
