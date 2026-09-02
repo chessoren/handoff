@@ -15,11 +15,11 @@ export function LiveToolPanel() {
         <h2 className="text-[11px] font-medium uppercase tracking-[0.08em] text-ink-muted">Live tools</h2>
         <span className="font-mono text-[11px] tabular-nums text-ink-muted">{supported ? `${live} exposed` : 'no WebMCP'}</span>
       </div>
-      <p className="px-2 pb-2 text-[11px] leading-4 text-ink-muted">
+      {supported && <p className="px-2 pb-2 text-[11px] leading-4 text-ink-muted">
         {source === 'getTools'
           ? <>From <code className="font-mono">getTools()</code>, refreshed on <code className="font-mono">toolchange</code>.</>
           : <>This agent has no <code className="font-mono">getTools()</code>; showing our own registry.</>}
-      </p>
+      </p>}
       {!supported ? (
         <p className="px-2 text-[12px] text-ink-muted">Nothing is registered because this browser has no <code className="font-mono">document.modelContext</code>.</p>
       ) : (
