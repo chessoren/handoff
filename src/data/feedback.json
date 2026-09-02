@@ -1,0 +1,1872 @@
+[
+  {
+    "id": "fb_001",
+    "source": "Support email",
+    "received": "2026-08-18",
+    "text": "I need to apply a one-time discount to a customer who already has a running subscription. The only way I found is to cancel and recreate it, which resets their billing anchor. Surely there is a better way?",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_002",
+    "source": "In-app survey",
+    "received": "2026-08-18",
+    "text": "Customer import: error message says 'invalid' with no hint. Give me the column name at least.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_003",
+    "source": "Support email",
+    "received": "2026-08-18",
+    "text": "When a card fails, the dunning email goes out immediately with no grace period. One of our biggest accounts got a 'your service will be suspended' email because of a bank hiccup. Please let us configure a retry window before any email is sent.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_004",
+    "source": "Sales call",
+    "received": "2026-08-18",
+    "text": "Prospect sends 2,000 invoices on the 1st of every month. Asked how long a bulk send takes. I did not have a good answer.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_005",
+    "source": "Support email",
+    "received": "2026-08-18",
+    "text": "Is there a FreshBooks importer? The CSV export from FreshBooks does not match your template and I do not want to reformat 3,000 rows.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_006",
+    "source": "Support email",
+    "received": "2026-08-18",
+    "text": "Proration on mid-cycle upgrades is rounding in our customers' favour by a cent or two on every line. It adds up: we lost about €340 last quarter to rounding. Can proration round half-up instead of down?",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_007",
+    "source": "Support email",
+    "received": "2026-08-18",
+    "text": "I cannot find an API method to void an invoice. The UI has the button. Is it just missing from the API?",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_008",
+    "source": "In-app survey",
+    "received": "2026-08-18",
+    "text": "Receipt scan crops the bottom of long receipts.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_009",
+    "source": "In-app survey",
+    "received": "2026-08-18",
+    "text": "Every navigation refetches everything. No caching at all it seems.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_010",
+    "source": "App Store",
+    "received": "2026-08-18",
+    "text": "5 stars but the widget shows revenue in USD even though my account is in GBP.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_011",
+    "source": "Support email",
+    "received": "2026-08-18",
+    "text": "Google Sheets export is a one-time CSV, not a live connection. The Sheets 'integration' in your marketing is misleading.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_012",
+    "source": "Twitter",
+    "received": "2026-08-18",
+    "text": "Uploading a 3MB receipt image to @ledgerly takes a minute. It is 2026.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_013",
+    "source": "Support email",
+    "received": "2026-08-18",
+    "text": "The iOS app logs me out whenever it goes to the background for more than a minute. Very frustrating when copying details from email.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_014",
+    "source": "Support email",
+    "received": "2026-08-19",
+    "text": "The invoice editor lost a line item I had just typed. Autosave seemed to apply an older state on top of my newer one. Happened twice this week.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_015",
+    "source": "App Store",
+    "received": "2026-08-19",
+    "text": "3 stars. Notifications for overdue invoices arrive at 4am my time.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_016",
+    "source": "Support email",
+    "received": "2026-08-19",
+    "text": "Our Zapier zap on 'Invoice paid' runs twice per payment, so our Slack channel gets two messages and our Google Sheet gets two rows. Idempotency please.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_017",
+    "source": "In-app survey",
+    "received": "2026-08-19",
+    "text": "Changelog has not been updated since May. Things changed a lot since then.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_018",
+    "source": "App Store",
+    "received": "2026-08-19",
+    "text": "2 stars. Invoice numbering restarted at 0001 after I changed the prefix. Our accountant is furious because we now have duplicate invoice numbers across the year.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_019",
+    "source": "Support email",
+    "received": "2026-08-19",
+    "text": "I downgraded on Aug 20 and was still billed the Pro amount on Sep 1. Confirmation email attached. Please refund the difference.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_020",
+    "source": "Support email",
+    "received": "2026-08-19",
+    "text": "The receipt scanner on Android cuts off the last few lines of long receipts, which is where the total is. I end up typing the amount by hand anyway.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_021",
+    "source": "Support email",
+    "received": "2026-08-19",
+    "text": "The Salesforce integration pushes invoices to Salesforce but does not pull account changes back. When a client changes their billing address in SF we have to re-enter it here.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_022",
+    "source": "Support email",
+    "received": "2026-08-19",
+    "text": "Where do I add a PO number? Our client rejects any invoice without one and I have been typing it in the notes box, which does not show up on the PDF.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_023",
+    "source": "In-app survey",
+    "received": "2026-08-19",
+    "text": "Yearly CSV export errors out (502). Monthly works.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_024",
+    "source": "Twitter",
+    "received": "2026-08-19",
+    "text": "Why does @ledgerly not send a receipt after payment? My clients ask for one every single time.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_025",
+    "source": "Support email",
+    "received": "2026-08-19",
+    "text": "We cannot bill in more than one currency from the same account. We have UK and US clients and had to create a second workspace just for USD.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_026",
+    "source": "Support email",
+    "received": "2026-08-20",
+    "text": "Lost a whole invoice draft on the mobile app when the train went through a tunnel. Drafts should persist offline.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_027",
+    "source": "Support email",
+    "received": "2026-08-20",
+    "text": "iOS app crashes at launch since version 4.2. I am on the road all week and cannot check whether clients have paid.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_028",
+    "source": "Sales call",
+    "received": "2026-08-20",
+    "text": "Prospect wants a guided migration from FreshBooks. We do CSV only. They have 3 years of history and asked who will do the mapping.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_029",
+    "source": "Sales call",
+    "received": "2026-08-20",
+    "text": "Prospect uses Xero. Asked whether tax codes sync. They do not. Prospect's bookkeeper said that is a dealbreaker.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_030",
+    "source": "In-app survey",
+    "received": "2026-08-20",
+    "text": "Help center search is useless. Searched 'VAT' and got an article about logo upload.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_031",
+    "source": "Support email",
+    "received": "2026-08-20",
+    "text": "Our customers are receiving invoices with the wrong currency symbol. We bill in EUR but the PDF shows $ next to the totals. Three clients have already asked if the amount is in dollars.",
+    "area": "Billing",
+    "severity": "P1",
+    "status": "Triaged",
+    "notes": ""
+  },
+  {
+    "id": "fb_032",
+    "source": "In-app survey",
+    "received": "2026-08-20",
+    "text": "Autosave on the invoice editor lags 2-3 seconds behind my typing and sometimes reverts a line.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_033",
+    "source": "In-app survey",
+    "received": "2026-08-20",
+    "text": "Dashboard charts take longer to load than the rest of the page. They pop in 5 seconds later and shift everything down.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_034",
+    "source": "Support email",
+    "received": "2026-08-20",
+    "text": "The API returns amounts as floats. We have seen 19.999999 for what should be 20.00. Please use integers in minor units or strings.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_035",
+    "source": "In-app survey",
+    "received": "2026-08-20",
+    "text": "Discount codes cannot be applied to an existing subscription, only at checkout.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_036",
+    "source": "In-app survey",
+    "received": "2026-08-20",
+    "text": "Timezone defaulted to UTC. All my invoice dates were a day off until I noticed.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_037",
+    "source": "Support email",
+    "received": "2026-08-20",
+    "text": "Trying to refund €50 of a €200 invoice. The refund dialog only offers the full amount. Had to do it in Stripe directly, and now Ledgerly and Stripe disagree on the balance.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_038",
+    "source": "Support email",
+    "received": "2026-08-20",
+    "text": "Generating the monthly aging report times out for us every time. We get a spinner for two minutes and then 'something went wrong'. This is our most important report.",
+    "area": "Performance",
+    "severity": "P0",
+    "status": "Triaged",
+    "notes": ""
+  },
+  {
+    "id": "fb_039",
+    "source": "Support email",
+    "received": "2026-08-21",
+    "text": "Signed up with Google, then tried to sign in with email and password and it created a second account. Now I have two workspaces and cannot merge them.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_040",
+    "source": "In-app survey",
+    "received": "2026-08-21",
+    "text": "iPad app is just the phone app stretched. Please use the space.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_041",
+    "source": "Sales call",
+    "received": "2026-08-21",
+    "text": "Field services prospect: technicians need to invoice from the van. Our mobile app can't create invoices. Deal is on hold.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_042",
+    "source": "Support email",
+    "received": "2026-08-21",
+    "text": "The mobile web version does not let me scroll the invoice table horizontally. The amount column is cut off and there is no way to see it.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_043",
+    "source": "App Store",
+    "received": "2026-08-21",
+    "text": "4 stars. Push notifications for payments received would be great. Right now I check manually.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_044",
+    "source": "App Store",
+    "received": "2026-08-21",
+    "text": "3 stars. Recurring invoices work but there is no way to pause a subscription for a month without cancelling it entirely. We have seasonal clients.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_045",
+    "source": "Twitter",
+    "received": "2026-08-21",
+    "text": "Is the @ledgerly changelog abandoned? Last entry May. Product clearly shipped stuff since.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_046",
+    "source": "Support email",
+    "received": "2026-08-21",
+    "text": "The subscription renewal email goes out at 03:00 UTC, which is the middle of the night for our US clients and lands at the bottom of their inbox. Could we choose the send time?",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_047",
+    "source": "Support email",
+    "received": "2026-08-21",
+    "text": "Logo upload rejected my SVG and my 2MB PNG. The limit is not stated anywhere. Please say what you accept.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_048",
+    "source": "Sales call",
+    "received": "2026-08-21",
+    "text": "Engineering lead at prospect asked about API rate limits. When I said 60/min he laughed. They need bulk endpoints.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_049",
+    "source": "Twitter",
+    "received": "2026-08-21",
+    "text": "Would pay extra for a push notification when an invoice gets paid in @ledgerly. Dopamine as a service.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_050",
+    "source": "Sales call",
+    "received": "2026-08-21",
+    "text": "Prospect's engineering team asked for p95 latency numbers on the API. We do not publish any. They said their current vendor does.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_051",
+    "source": "In-app survey",
+    "received": "2026-08-22",
+    "text": "Invoice PDFs show $ instead of € for our EU customers. Embarrassing.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_052",
+    "source": "Support email",
+    "received": "2026-08-22",
+    "text": "Stripe webhook signature verification fails intermittently on your side, so some payments never mark the invoice as paid. Our clients then get reminders for invoices they already paid.",
+    "area": "Integrations",
+    "severity": "P0",
+    "status": "Triaged",
+    "notes": ""
+  },
+  {
+    "id": "fb_053",
+    "source": "In-app survey",
+    "received": "2026-08-22",
+    "text": "Per-event Slack channels please.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_054",
+    "source": "Sales call",
+    "received": "2026-08-22",
+    "text": "Multi-currency was the first question on the call. Prospect has customers in 6 countries. They will not move forward without it.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_055",
+    "source": "Support email",
+    "received": "2026-08-22",
+    "text": "Dark mode: the invoice preview in the iPhone app has near-black text on a dark background. I have to switch to light mode to read it.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_056",
+    "source": "App Store",
+    "received": "2026-08-22",
+    "text": "1 star. Logged out every single time I switch apps. Session lasts about 30 seconds in the background.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_057",
+    "source": "In-app survey",
+    "received": "2026-08-22",
+    "text": "Love the invoicing. Hate that I can't see a running total of unpaid invoices per customer on the customer page.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_058",
+    "source": "Support email",
+    "received": "2026-08-22",
+    "text": "Webhook deliveries to our endpoint are arriving 10 to 30 minutes late during business hours. Overnight they are instant. Are you queueing?",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_059",
+    "source": "Support email",
+    "received": "2026-08-22",
+    "text": "Aging report never finishes. We have 11k invoices. Timed out three times this morning.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_060",
+    "source": "Support email",
+    "received": "2026-08-22",
+    "text": "Credit notes do not reduce the outstanding balance on the customer portal. The customer sees the original invoice as unpaid even though we issued a credit for the full amount.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_061",
+    "source": "In-app survey",
+    "received": "2026-08-22",
+    "text": "Keyboard shortcuts exist (I found ? by accident) but are documented nowhere.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_062",
+    "source": "In-app survey",
+    "received": "2026-08-22",
+    "text": "Late fees: we want to charge 1.5% per month automatically. No option for this.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_063",
+    "source": "Twitter",
+    "received": "2026-08-22",
+    "text": "Made two accounts by accident on @ledgerly (Google vs email). No way to merge. Support says 'pick one'.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_064",
+    "source": "Twitter",
+    "received": "2026-08-23",
+    "text": "The @ledgerly help center search returns nothing for 'credit note'. It is a feature you have.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_065",
+    "source": "In-app survey",
+    "received": "2026-08-23",
+    "text": "Disputes / chargebacks are invisible in the app. Had to find out from Stripe.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_066",
+    "source": "Sales call",
+    "received": "2026-08-23",
+    "text": "Enterprise prospect wants purchase order numbers printed on invoices and searchable. Currently only in the notes field. Not a blocker but came up twice.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_067",
+    "source": "Support email",
+    "received": "2026-08-23",
+    "text": "An invoice marked as paid in Ledgerly was never actually collected. The webhook from Stripe said 'payment_intent.succeeded' but the funds never arrived because the payment was later disputed. Ledgerly did not reflect the dispute anywhere.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_068",
+    "source": "Support email",
+    "received": "2026-08-23",
+    "text": "The API docs still reference the v1 endpoints that were removed in June. I spent a morning integrating against an endpoint that returns 410 Gone.",
+    "area": "Docs",
+    "severity": "P1",
+    "status": "Triaged",
+    "notes": ""
+  },
+  {
+    "id": "fb_069",
+    "source": "Twitter",
+    "received": "2026-08-23",
+    "text": "Would love a Postman collection for the @ledgerly API. Docs alone are not enough to get started fast.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_070",
+    "source": "Support email",
+    "received": "2026-08-23",
+    "text": "VAT is being applied to a customer in Switzerland, which is not in the EU. We had to void and reissue the invoice by hand. Is there a way to override the tax rule per customer?",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_071",
+    "source": "Support email",
+    "received": "2026-08-23",
+    "text": "Customer page should show total outstanding. Right now I have to sum invoices myself.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_072",
+    "source": "Support email",
+    "received": "2026-08-23",
+    "text": "Webhook payloads do not include the customer's external ID that we set via the API, only your internal ID. We have to make a second call for every event.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_073",
+    "source": "App Store",
+    "received": "2026-08-23",
+    "text": "5 stars for the product, but the invite-your-team step happens before you have anything to show them. I invited my accountant into an empty workspace and she was confused.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_074",
+    "source": "In-app survey",
+    "received": "2026-08-23",
+    "text": "Auto-charge failed silently for a customer with an expired card. No notification to us at all.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_075",
+    "source": "Support email",
+    "received": "2026-08-23",
+    "text": "Do you support SAML SSO? Our IT policy requires it for any finance tool. Google-only sign-in will not pass our security review.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_076",
+    "source": "Support email",
+    "received": "2026-08-24",
+    "text": "Xero integration: tax codes are not mapped, every synced invoice lands in Xero with 'no tax' and we have to fix each one by hand.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_077",
+    "source": "App Store",
+    "received": "2026-08-24",
+    "text": "2 stars. Tapping a customer's phone number in the app copies it instead of calling.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_078",
+    "source": "Twitter",
+    "received": "2026-08-24",
+    "text": "Why does a PDF invoice take 20 seconds to render on @ledgerly? It's a table.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_079",
+    "source": "Twitter",
+    "received": "2026-08-24",
+    "text": "@ledgerly double-charged us this month. Two charges, same amount, minutes apart. Anyone else?",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_080",
+    "source": "Support email",
+    "received": "2026-08-24",
+    "text": "Payment terms are global. We need per-customer terms. Our biggest client is net 60 by contract.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_081",
+    "source": "In-app survey",
+    "received": "2026-08-24",
+    "text": "Mobile app is read-only. Need to create and send invoices from my phone.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_082",
+    "source": "In-app survey",
+    "received": "2026-08-24",
+    "text": "Search is laggy. Each keystroke takes half a second to register.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_083",
+    "source": "Support email",
+    "received": "2026-08-24",
+    "text": "Every QuickBooks sync creates a new copy of each customer instead of matching the existing one. Started about a week ago.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_084",
+    "source": "In-app survey",
+    "received": "2026-08-24",
+    "text": "Verification email took 25 minutes to arrive. I had signed up twice by then.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_085",
+    "source": "In-app survey",
+    "received": "2026-08-24",
+    "text": "Customer pages with 200+ invoices lock up the browser tab for 3-4 seconds.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_086",
+    "source": "In-app survey",
+    "received": "2026-08-24",
+    "text": "How is proration calculated? Not in the docs. Support did not know either.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_087",
+    "source": "App Store",
+    "received": "2026-08-24",
+    "text": "1 star. Trial expired mid-month with zero warning and locked me out of my own invoices. Had to pay to get my data.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_088",
+    "source": "In-app survey",
+    "received": "2026-08-24",
+    "text": "First load after login is 8+ seconds on a good connection.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_089",
+    "source": "In-app survey",
+    "received": "2026-08-25",
+    "text": "Docs code samples are in Ruby only. We are a Node shop.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_090",
+    "source": "Support email",
+    "received": "2026-08-25",
+    "text": "The OpenAPI spec you publish does not validate. Our codegen tool rejects it because of duplicated operationIds.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_091",
+    "source": "In-app survey",
+    "received": "2026-08-25",
+    "text": "Company logo upload during setup accepts PNG only. My logo is an SVG.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_092",
+    "source": "Support email",
+    "received": "2026-08-25",
+    "text": "All the code examples in your docs are Ruby. Could you at least add JavaScript and Python? Most of your customers are not Rails shops.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_093",
+    "source": "Support email",
+    "received": "2026-08-25",
+    "text": "Please add a way to remove the demo invoices in one click. I deleted 20 of them by hand.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_094",
+    "source": "Support email",
+    "received": "2026-08-25",
+    "text": "The dashboard layout jumps when the revenue chart loads. I have clicked the wrong button twice because of it.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_095",
+    "source": "Twitter",
+    "received": "2026-08-25",
+    "text": "Heads up: @ledgerly QuickBooks sync duplicating customers nightly. Check your QBO.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_096",
+    "source": "Twitter",
+    "received": "2026-08-25",
+    "text": "@ledgerly markets a Google Sheets integration. It is a CSV download button.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_097",
+    "source": "Support email",
+    "received": "2026-08-25",
+    "text": "Where is your SOC 2 report? Our vendor review requires it and I cannot find any security page on your site.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_098",
+    "source": "Support email",
+    "received": "2026-08-25",
+    "text": "Cold start of the app after login is around 8 seconds for me. Most of it seems to be a giant JavaScript download.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_099",
+    "source": "App Store",
+    "received": "2026-08-25",
+    "text": "3 stars. It would help a lot to have a sample invoice I can send to myself before I send a real one to a client.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_100",
+    "source": "In-app survey",
+    "received": "2026-08-25",
+    "text": "Paid invoices sometimes stay 'unpaid' after Stripe payment. Clients get wrongly reminded.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_101",
+    "source": "Twitter",
+    "received": "2026-08-26",
+    "text": "@ledgerly iOS app won't open after today's update. Crash on splash screen. Anyone?",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_102",
+    "source": "Support email",
+    "received": "2026-08-26",
+    "text": "We only found out a client's card had expired when they called us to ask why they had not been charged. Ledgerly should notify the account owner when auto-collection fails.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_103",
+    "source": "In-app survey",
+    "received": "2026-08-26",
+    "text": "HubSpot: deals closed-won should create a customer + subscription automatically.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_104",
+    "source": "Sales call",
+    "received": "2026-08-26",
+    "text": "Prospect (200-seat agency) asked whether dunning emails can be delayed or customized. Said the default tone is 'too aggressive for our clients'. Blocking for the deal.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_105",
+    "source": "In-app survey",
+    "received": "2026-08-26",
+    "text": "I didn't understand what a 'billing anchor' is during setup. No explanation, no tooltip.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_106",
+    "source": "Support email",
+    "received": "2026-08-26",
+    "text": "Duplicate charge on our account on Aug 28. Card shows 2x $1,240. Please advise.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_107",
+    "source": "App Store",
+    "received": "2026-08-26",
+    "text": "3 stars. Camera receipt capture only works in portrait. Landscape receipts come out rotated and tiny.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_108",
+    "source": "Support email",
+    "received": "2026-08-26",
+    "text": "We were charged twice for the August invoice run. Two identical Stripe charges, same amount, four minutes apart. Our finance lead has already flagged it internally and I need a refund confirmation today.",
+    "area": "Billing",
+    "severity": "P0",
+    "status": "Triaged",
+    "notes": ""
+  },
+  {
+    "id": "fb_109",
+    "source": "In-app survey",
+    "received": "2026-08-26",
+    "text": "Refund partially? Only full refunds available.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_110",
+    "source": "Support email",
+    "received": "2026-08-26",
+    "text": "Exporting invoices to CSV for the year returns a 502 error. Smaller ranges (a month) work. We need the full year for our auditors.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_111",
+    "source": "Sales call",
+    "received": "2026-08-26",
+    "text": "Prospect wants SSO via Okta. We only have Google SSO. They cannot use us without SAML.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_112",
+    "source": "In-app survey",
+    "received": "2026-08-26",
+    "text": "Contextual help links all go to the same landing page.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_113",
+    "source": "Twitter",
+    "received": "2026-08-26",
+    "text": "Third time this week the @ledgerly status page says all good while the app is unusable for us. Please be honest on the status page.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_114",
+    "source": "Support email",
+    "received": "2026-08-27",
+    "text": "Webhook payload reference is missing half the events. 'subscription.updated' and 'credit_note.created' are not documented at all.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_115",
+    "source": "Support email",
+    "received": "2026-08-27",
+    "text": "The customer portal lets clients download the invoice PDF but not the receipt after they pay. They keep emailing us for receipts.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_116",
+    "source": "Support email",
+    "received": "2026-08-27",
+    "text": "Importing 1,400 customers from our old tool. The import silently dropped everyone without a phone number. There was no warning, we only noticed a week later.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_117",
+    "source": "App Store",
+    "received": "2026-08-27",
+    "text": "2 stars. The app freezes for a few seconds every time I open a customer with a long payment history.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_118",
+    "source": "Support email",
+    "received": "2026-08-27",
+    "text": "Webhook events are not retried on failure. We had a 90-second deploy window and lost 14 payment events. Please retry with backoff like every other provider.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_119",
+    "source": "Support email",
+    "received": "2026-08-27",
+    "text": "Your tax documentation says EU reverse charge is applied automatically, but it is only applied if the customer's VAT number has been validated, which is not mentioned anywhere. Cost us a reissued invoice.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_120",
+    "source": "In-app survey",
+    "received": "2026-08-27",
+    "text": "Please support annual billing with monthly usage add-ons on the same invoice.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_121",
+    "source": "Support email",
+    "received": "2026-08-27",
+    "text": "Leaving the app open overnight, the tab reaches 2GB of memory. Something is leaking. Refreshing fixes it temporarily.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_122",
+    "source": "App Store",
+    "received": "2026-08-27",
+    "text": "3 stars. You cannot create an invoice from the mobile app, only view them. Half the reason I have a phone app is to invoice on site.",
+    "area": "Mobile",
+    "severity": "P1",
+    "status": "Triaged",
+    "notes": ""
+  },
+  {
+    "id": "fb_123",
+    "source": "Support email",
+    "received": "2026-08-27",
+    "text": "The 'Getting started' guide screenshots are from the old UI. Buttons are in different places now, which confused two of my new hires.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_124",
+    "source": "In-app survey",
+    "received": "2026-08-27",
+    "text": "Offline mode: I lose everything I was typing if the connection drops in the app.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_125",
+    "source": "Support email",
+    "received": "2026-08-27",
+    "text": "Docs are English only. Our finance team in Paris would appreciate a French version of at least the getting started guide.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_126",
+    "source": "In-app survey",
+    "received": "2026-08-28",
+    "text": "Biometric login on Android please.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_127",
+    "source": "Support email",
+    "received": "2026-08-28",
+    "text": "There is no documentation at all on how proration is calculated. Our customers ask, and we cannot explain it. A worked example would go a long way.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_128",
+    "source": "Support email",
+    "received": "2026-08-28",
+    "text": "The API rate limit is 60 requests per minute, which is far too low to sync our 20k customers nightly. It takes over five hours.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_129",
+    "source": "In-app survey",
+    "received": "2026-08-28",
+    "text": "The sample data you pre-load is confusing. I thought those were real invoices and almost sent one.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_130",
+    "source": "In-app survey",
+    "received": "2026-08-28",
+    "text": "OAuth token for Stripe expires every 30 days and nobody is notified. Sync just stops.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_131",
+    "source": "App Store",
+    "received": "2026-08-28",
+    "text": "1 star. Charged me for the Pro plan after I downgraded to Starter. The downgrade was confirmed by email. Still waiting on support after five days.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_132",
+    "source": "In-app survey",
+    "received": "2026-08-28",
+    "text": "Can't pause a subscription. Only cancel. Annoying for seasonal customers.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_133",
+    "source": "App Store",
+    "received": "2026-08-28",
+    "text": "4 stars. Solid product. Would give 5 if I could set different payment terms per customer (net 15 for some, net 45 for others) instead of one global default.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_134",
+    "source": "Support email",
+    "received": "2026-08-28",
+    "text": "Attachments over 2MB take a very long time to upload and sometimes fail with no error. Our expense receipts are photos from phones, so they are all above that.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_135",
+    "source": "Sales call",
+    "received": "2026-08-28",
+    "text": "Demo went well but the prospect said the first-run experience 'assumes you already know invoicing software'. They are a solo consultant.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_136",
+    "source": "Support email",
+    "received": "2026-08-28",
+    "text": "Bulk-sending 300 invoices at month end took 45 minutes and we could not use the app during that time. A background job with a progress indicator would be so much better.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_137",
+    "source": "Twitter",
+    "received": "2026-08-28",
+    "text": "@ledgerly invoice list is crawling today. 10+ seconds. Anyone else?",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_138",
+    "source": "App Store",
+    "received": "2026-08-28",
+    "text": "4 stars. The in-app help links open the generic help center home page, not the article for the screen I am on.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_139",
+    "source": "Support email",
+    "received": "2026-08-29",
+    "text": "Changing the invoice prefix reset our sequence to 1. We now have two invoices numbered LDG-0001. This is a legal problem in Germany.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_140",
+    "source": "Twitter",
+    "received": "2026-08-29",
+    "text": "Tried @ledgerly. Got asked for my bank details on screen two. Closed the tab.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_141",
+    "source": "In-app survey",
+    "received": "2026-08-29",
+    "text": "Webhooks have no retry. If our server is down for a minute we lose events forever.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_142",
+    "source": "Sales call",
+    "received": "2026-08-29",
+    "text": "Prospect asked for a security whitepaper / SOC 2 report. We have SOC 2 but there is no page mentioning it. They assumed we did not have it.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_143",
+    "source": "Support email",
+    "received": "2026-08-29",
+    "text": "Your OpenAPI file has duplicate operationId values, so openapi-generator refuses to build a client. Took me a while to figure out it was your spec and not my setup.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_144",
+    "source": "In-app survey",
+    "received": "2026-08-29",
+    "text": "Invoice list is really slow now (about 10s). Was fine a month ago.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_145",
+    "source": "Support email",
+    "received": "2026-08-29",
+    "text": "Slack notifications only go to one channel for the whole workspace. We want overdue alerts in #finance and payment alerts in #sales.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_146",
+    "source": "In-app survey",
+    "received": "2026-08-29",
+    "text": "The 'skip for now' link on the tax setup step is grey on grey. I did not see it and gave up.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_147",
+    "source": "Support email",
+    "received": "2026-08-29",
+    "text": "The 'Send reminder' button sends the reminder to the billing contact only. Our clients often want reminders to go to their AP inbox as well. A CC field on reminders would fix this.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_148",
+    "source": "In-app survey",
+    "received": "2026-08-29",
+    "text": "Screenshots in the docs are outdated (old navigation).",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_149",
+    "source": "Support email",
+    "received": "2026-08-29",
+    "text": "On iPad the app runs in a phone-sized layout with huge empty margins. A two-pane layout would be far more useful for reviewing invoices.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_150",
+    "source": "Support email",
+    "received": "2026-08-29",
+    "text": "The default timezone is UTC and it is buried in settings. Every invoice we sent in the first week has the wrong date on it for our Sydney office.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_151",
+    "source": "Twitter",
+    "received": "2026-08-30",
+    "text": "@ledgerly API docs describe endpoints that no longer exist. v1 was removed in June, docs still say v1.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_152",
+    "source": "Support email",
+    "received": "2026-08-30",
+    "text": "The invoice list takes 12 to 15 seconds to load since last week. We have around 9,000 invoices. It used to be instant.",
+    "area": "Performance",
+    "severity": "P1",
+    "status": "Triaged",
+    "notes": ""
+  },
+  {
+    "id": "fb_153",
+    "source": "Support email",
+    "received": "2026-08-30",
+    "text": "New team members get the full onboarding tour even though the workspace is already set up. The tour tells them to 'connect Stripe' which is already connected. Confusing.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_154",
+    "source": "Twitter",
+    "received": "2026-08-30",
+    "text": "@ledgerly mobile logs me out if I so much as glance at another app.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_155",
+    "source": "Support email",
+    "received": "2026-08-30",
+    "text": "The QuickBooks sync has been creating duplicate customers every night since Aug 25. We now have 300 duplicated contacts in QBO and our accountant is threatening to disconnect it.",
+    "area": "Integrations",
+    "severity": "P0",
+    "status": "Triaged",
+    "notes": ""
+  },
+  {
+    "id": "fb_156",
+    "source": "Twitter",
+    "received": "2026-08-30",
+    "text": "Would love to CC a second email on payment reminders in @ledgerly. Small thing, big deal for our AP workflow.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_157",
+    "source": "In-app survey",
+    "received": "2026-08-30",
+    "text": "Zapier trigger 'invoice paid' fires twice for the same invoice.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_158",
+    "source": "Support email",
+    "received": "2026-08-30",
+    "text": "Our Stripe connection silently disconnected. No email, no banner. We noticed after a week when no invoices had been marked as paid.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_159",
+    "source": "In-app survey",
+    "received": "2026-08-30",
+    "text": "The onboarding checklist keeps reappearing after I dismissed it. Every login.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_160",
+    "source": "Sales call",
+    "received": "2026-08-30",
+    "text": "Prospect's developer said the webhook docs do not list the payload for 'subscription.updated'. He had to reverse-engineer it from a test event.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_161",
+    "source": "App Store",
+    "received": "2026-08-30",
+    "text": "4 stars. Fast enough on desktop but please cache the customer list, it reloads from scratch every time I go back.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_162",
+    "source": "Twitter",
+    "received": "2026-08-30",
+    "text": "Any chance of a Notion integration for @ledgerly? Even just an embed of the unpaid list.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_163",
+    "source": "In-app survey",
+    "received": "2026-08-30",
+    "text": "Can't attach a file from Files app on iOS, only from Photos.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_164",
+    "source": "Twitter",
+    "received": "2026-08-31",
+    "text": "Is there an @ledgerly API endpoint to void an invoice? Can't find one in the docs.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_165",
+    "source": "App Store",
+    "received": "2026-08-31",
+    "text": "Crashes immediately on open after updating. iPhone 14 Pro. Please fix.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_166",
+    "source": "Support email",
+    "received": "2026-08-31",
+    "text": "The CSV import for customers failed with 'row 1 invalid' and no other detail. I spent an hour guessing which column was wrong. It turned out the header had to be lowercase.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_167",
+    "source": "In-app survey",
+    "received": "2026-08-31",
+    "text": "Took me 40 minutes to send my first invoice. Too many required fields on the company profile before you let me do anything.",
+    "area": "Onboarding",
+    "severity": "P2",
+    "status": "Triaged",
+    "notes": ""
+  },
+  {
+    "id": "fb_168",
+    "source": "Twitter",
+    "received": "2026-08-31",
+    "text": "That onboarding checklist in @ledgerly is haunted. I have dismissed it four times.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_169",
+    "source": "Support email",
+    "received": "2026-08-31",
+    "text": "Typing in the global search box is painful. Letters appear with a delay and the results flicker. Chrome on a fast Mac.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_170",
+    "source": "Support email",
+    "received": "2026-08-31",
+    "text": "We had two outages last week of about 20 minutes each. Neither appeared on your status page. We were sending invoices during both.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_171",
+    "source": "In-app survey",
+    "received": "2026-08-31",
+    "text": "Memory use of the tab grows until Chrome kills it if I leave Ledgerly open all day.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_172",
+    "source": "Twitter",
+    "received": "2026-08-31",
+    "text": "Tax-inclusive pricing please @ledgerly. Every B2C client I have wants to see the price with VAT baked in.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_173",
+    "source": "App Store",
+    "received": "2026-08-31",
+    "text": "1 star. The iOS app crashes on launch since the last update. iPhone 15, iOS 26. Reinstalled twice.",
+    "area": "Mobile",
+    "severity": "P0",
+    "status": "Triaged",
+    "notes": ""
+  },
+  {
+    "id": "fb_174",
+    "source": "Support email",
+    "received": "2026-08-31",
+    "text": "I finished setup and landed on an empty dashboard with no call to action. I had to find 'New invoice' in a menu.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_175",
+    "source": "App Store",
+    "received": "2026-08-31",
+    "text": "2 stars. Android app does not support fingerprint login. I have to type a 20-character password every time.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_176",
+    "source": "In-app survey",
+    "received": "2026-09-01",
+    "text": "Issued a credit note but the portal still says unpaid. Confusing for clients.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_177",
+    "source": "In-app survey",
+    "received": "2026-09-01",
+    "text": "On my phone the invoice table is cut off on the right. Cannot see totals.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_178",
+    "source": "Support email",
+    "received": "2026-09-01",
+    "text": "PDF generation for a 40-line invoice takes almost 20 seconds. Our clients see a blank tab and think it broke.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_179",
+    "source": "Support email",
+    "received": "2026-09-01",
+    "text": "The attach button in the iOS app only opens the photo library. Our receipts are PDFs in the Files app. Please add a document picker.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_180",
+    "source": "Support email",
+    "received": "2026-09-01",
+    "text": "The API reference does not say which fields are required when creating an invoice. Trial and error until the 400 errors stopped.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_181",
+    "source": "Sales call",
+    "received": "2026-09-01",
+    "text": "Asked about revenue recognition reports for annual plans. We don't have it. Prospect's CFO will not sign without deferred revenue schedules.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_182",
+    "source": "In-app survey",
+    "received": "2026-09-01",
+    "text": "Salesforce connector only syncs one direction (Ledgerly to SF). Need the reverse.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_183",
+    "source": "App Store",
+    "received": "2026-09-01",
+    "text": "2 stars. The setup wizard forced me to connect a bank account before I could even look around the product. I just wanted to see what it does.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_184",
+    "source": "Support email",
+    "received": "2026-09-01",
+    "text": "We would love a HubSpot integration. When a deal closes we currently copy the contact details into Ledgerly by hand, which is error-prone.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_185",
+    "source": "App Store",
+    "received": "2026-09-01",
+    "text": "2 stars. Dark mode on the iOS app makes the invoice preview unreadable: black text on dark grey.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_186",
+    "source": "App Store",
+    "received": "2026-09-01",
+    "text": "3 stars. Works, but the whole app feels heavier than six months ago. Every page has a little wait.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  },
+  {
+    "id": "fb_187",
+    "source": "Support email",
+    "received": "2026-09-01",
+    "text": "The trial ended without any warning email. I logged in to a paywall with three invoices due that day. A 3-day and 1-day heads-up would be standard.",
+    "area": null,
+    "severity": null,
+    "status": "New",
+    "notes": ""
+  }
+]
