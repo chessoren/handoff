@@ -34,31 +34,34 @@ export function Cell({ row, col, agentFocused }: Props) {
 
   if (isEditing && editable) {
     return (
-      <div className={`${base} ring-2 ring-inset ring-human`} data-col={col.id}>
+      <div className={`${base} ring-2 ring-inset ring-human`} data-col={col.id} role="gridcell">
         <Editor col={col} initial={value == null ? '' : String(value)} onCommit={(v) => { setCell(row.id, col.id as EditableColumnId, col.values ? (v || null) : v, 'human'); endEdit(); }} onCancel={endEdit} />
       </div>
     );
   }
 
-  const open = () => { if (editable) beginEdit({ rowId: row.id, columnId: col.id as EditableColumnId }); };
+  // A cell with a pending proposal is decided first, then edited: it holds two
+  // real buttons, so it must not itself be interactive (no nested controls).
+  const canOpen = editable && !pending;
+  const open = () => { if (canOpen) beginEdit({ rowId: row.id, columnId: col.id as EditableColumnId }); };
 
   return (
     <div
       data-col={col.id}
-      role={editable ? 'button' : undefined}
-      tabIndex={editable ? 0 : -1}
+      role="gridcell"
+      tabIndex={canOpen ? 0 : -1}
       onClick={open}
-      onKeyDown={(e) => { if (editable && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); open(); } }}
-      className={`${base} ${tone} ${editable ? 'cursor-text outline-none hover:bg-ground/60 focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-human' : ''} ${col.id === 'text' ? 'min-w-0' : ''}`}
+      onKeyDown={(e) => { if (canOpen && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); open(); } }}
+      className={`${base} ${tone} ${canOpen ? 'cursor-text outline-none hover:bg-ground/60 focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-human' : ''} ${col.id === 'text' ? 'min-w-0' : ''}`}
       title={col.id === 'text' ? String(value) : undefined}
     >
       {pending ? (
         <span className="flex min-w-0 items-center gap-1.5">
-          {pending.edit.from ? <s className="truncate text-ink-muted">{pending.edit.from}</s> : null}
-          <span className="truncate rounded-sm bg-agent/10 px-1 font-medium text-agent" title={pending.edit.rationale}>{pending.edit.to}</span>
+          {pending.from ? <s className="truncate text-ink-muted">{pending.from}</s> : null}
+          <span className="truncate rounded-sm bg-agent/10 px-1 font-medium text-agent" title={pending.rationale}>{pending.to}</span>
           <span className="ml-auto flex shrink-0 items-center gap-0.5 pl-1">
-            <button type="button" aria-label="Accept this edit" onClick={(e) => { e.stopPropagation(); decideEdit(pending.proposal.id, pending.edit.id, 'accepted'); }} className="grid size-5 place-items-center rounded text-human hover:bg-human/10 focus-visible:outline-2 focus-visible:outline-human"><Check className="size-3.5" /></button>
-            <button type="button" aria-label="Reject this edit" onClick={(e) => { e.stopPropagation(); decideEdit(pending.proposal.id, pending.edit.id, 'rejected'); }} className="grid size-5 place-items-center rounded text-ink-muted hover:bg-ground focus-visible:outline-2 focus-visible:outline-human"><X className="size-3.5" /></button>
+            <button type="button" aria-label="Accept this edit" onClick={(e) => { e.stopPropagation(); decideEdit(pending.proposalId, pending.id, 'accepted'); }} className="grid size-5 place-items-center rounded text-human hover:bg-human/10 focus-visible:outline-2 focus-visible:outline-human"><Check className="size-3.5" /></button>
+            <button type="button" aria-label="Reject this edit" onClick={(e) => { e.stopPropagation(); decideEdit(pending.proposalId, pending.id, 'rejected'); }} className="grid size-5 place-items-center rounded text-ink-muted hover:bg-ground focus-visible:outline-2 focus-visible:outline-human"><X className="size-3.5" /></button>
           </span>
         </span>
       ) : (

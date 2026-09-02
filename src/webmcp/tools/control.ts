@@ -18,7 +18,10 @@ export const request_control: ToolDef = {
     additionalProperties: false,
   },
   annotations: { readOnlyHint: false, untrustedContentHint: false },
-  execute: async (raw, { signal }) => {
+  // Chrome 152 passes no options object when a tool is executed via executeTool();
+  // read the signal defensively.
+  execute: async (raw, options) => {
+    const signal = options?.signal;
     const { reason, estimatedEdits } = raw as { reason: string; estimatedEdits: number };
     const s = useStore.getState();
     if (s.control === 'human') return fail('The human is editing right now. Ask again once they are idle.', { retryAfter: 'human_idle' });

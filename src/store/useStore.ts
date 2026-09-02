@@ -21,6 +21,7 @@ export interface AgentPresence {
 
 export interface ProposedEdit {
   id: string;
+  proposalId: string;
   rowId: string;
   columnId: EditableColumnId;
   from: string | null;
@@ -101,7 +102,7 @@ interface Actions {
   // agent presence
   setAgentPresence: (p: AgentPresence | null) => void;
   // proposals
-  addProposal: (label: string, edits: Omit<ProposedEdit, 'id' | 'decision' | 'from'>[]) => Proposal;
+  addProposal: (label: string, edits: Omit<ProposedEdit, 'id' | 'proposalId' | 'decision' | 'from'>[]) => Proposal;
   decideEdit: (proposalId: string, editId: string, decision: 'accepted' | 'rejected') => void;
   decideAll: (proposalId: string, decision: 'accepted' | 'rejected') => void;
   // control
@@ -235,12 +236,14 @@ export const useStore = create<Store>()(
 
     addProposal: (label, edits) => {
       const rowsById = new Map(get().rows.map((r) => [r.id, r]));
+      const proposalId = nextId('prop');
       const proposal: Proposal = {
-        id: nextId('prop'),
+        id: proposalId,
         label,
         createdAt: Date.now(),
         edits: edits.map((e) => ({
           id: nextId('edit'),
+          proposalId,
           rowId: e.rowId,
           columnId: e.columnId,
           from: rowsById.get(e.rowId)?.[e.columnId] ?? null,
@@ -335,12 +338,12 @@ export function untaggedCount(rows: Row[]): number {
   return rows.filter((r) => r.area === null || r.severity === null).length;
 }
 
-/** Pending proposed edit for a cell, if any — drives the inline diff rendering. */
-export function pendingEditFor(proposals: Proposal[], rowId: string, columnId: string): { proposal: Proposal; edit: ProposedEdit } | null {
+/** Pending proposed edit for a cell, if any — drives the inline diff rendering.
+ *  Returns the edit object held in state (stable reference), so it is safe as a selector result. */
+export function pendingEditFor(proposals: Proposal[], rowId: string, columnId: string): ProposedEdit | null {
   for (let i = proposals.length - 1; i >= 0; i--) {
-    const p = proposals[i];
-    const e = p.edits.find((x) => x.rowId === rowId && x.columnId === columnId && x.decision === 'pending');
-    if (e) return { proposal: p, edit: e };
+    const e = proposals[i].edits.find((x) => x.rowId === rowId && x.columnId === columnId && x.decision === 'pending');
+    if (e) return e;
   }
   return null;
 }

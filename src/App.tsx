@@ -10,6 +10,8 @@ import { ViewsPanel } from './components/ViewsPanel';
 import { useStore } from './store/useStore';
 import { startRegistry } from './webmcp/registry';
 
+if (import.meta.env.DEV) (window as unknown as { __handoff: unknown }).__handoff = useStore;
+
 export default function App() {
   const supported = useStore((s) => s.supported);
 

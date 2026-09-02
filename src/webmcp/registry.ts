@@ -49,6 +49,9 @@ export function desiredToolset(s: { control: string; proposals: unknown[]; contr
 }
 
 const controllers = new Map<ToolName, AbortController>();
+/** Executions currently running per tool. A tool is never aborted mid-flight:
+ *  Chrome < 153 would drop the in-flight result, so withdrawal waits. */
+const inFlight = new Map<ToolName, number>();
 let syncing: Promise<void> | null = null;
 let dirty = false;
 
@@ -59,6 +62,8 @@ function instrumented(def: ToolDef): ToolDef {
     execute: async (input, options) => {
       const store = useStore.getState();
       const started = performance.now();
+      const name = def.name as ToolName;
+      inFlight.set(name, (inFlight.get(name) ?? 0) + 1);
       store.appendLog({ kind: 'call', tool: def.name, summary: `called ${def.name}`, detail: input });
       try {
         const result = (await def.execute(input, options)) as { ok?: boolean; summary?: string; error?: string; retryAfter?: string };
@@ -78,6 +83,10 @@ function instrumented(def: ToolDef): ToolDef {
       } catch (err) {
         useStore.getState().appendLog({ kind: 'result', tool: def.name, summary: `threw: ${String(err)}`, durationMs: Math.round(performance.now() - started) });
         throw err;
+      } finally {
+        inFlight.set(name, (inFlight.get(name) ?? 1) - 1);
+        // Let the result reach the agent before any withdrawal this call caused.
+        setTimeout(() => { void syncTools(); }, 0);
       }
     },
   };
@@ -89,6 +98,7 @@ async function reconcile(): Promise<void> {
 
   for (const [name, ctrl] of controllers) {
     if (want.has(name)) continue;
+    if ((inFlight.get(name) ?? 0) > 0) continue; // withdraw once it returns
     ctrl.abort();
     controllers.delete(name);
     useStore.getState().appendLog({ kind: 'unregister', tool: name, summary: `${name} withdrawn` });
