@@ -69,7 +69,7 @@ export type SavedView = { id: string; label: string; view: Omit<View, 'preset' |
 export const SAVED_VIEWS: SavedView[] = [
   { id: 'all', label: 'All feedback', view: { filter: null, sortBy: null, groupBy: null } },
   { id: 'untagged', label: 'Untagged', view: { filter: { columnId: 'area', op: 'isEmpty' }, sortBy: null, groupBy: null } },
-  { id: 'urgent', label: 'P0 · P1', view: { filter: { columnId: 'severity', op: 'contains', value: 'P' }, sortBy: { columnId: 'severity', direction: 'asc' }, groupBy: 'severity' } },
+  { id: 'urgent', label: 'P0 · P1', view: { filter: { columnId: 'severity', op: 'oneOf', value: 'P0,P1' }, sortBy: { columnId: 'severity', direction: 'asc' }, groupBy: 'severity' } },
   { id: 'billing', label: 'Billing', view: { filter: { columnId: 'area', op: 'equals', value: 'Billing' }, sortBy: null, groupBy: null } },
   { id: 'escalated', label: 'Escalated', view: { filter: { columnId: 'status', op: 'equals', value: 'Escalated' }, sortBy: null, groupBy: null } },
 ];

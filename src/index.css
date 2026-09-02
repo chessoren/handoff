@@ -6,7 +6,7 @@
   --color-ground: #eef0ec;
   --color-surface: #ffffff;
   --color-ink: #1c2321;
-  --color-ink-muted: #6b7472;
+  --color-ink-muted: #5a6361; /* 5.4:1 on --ground, 6.2:1 on white */
   --color-rule: #d6dad5;
   --color-human: #1f4b99;
   --color-human-wash: #1f4b9914;

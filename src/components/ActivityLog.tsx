@@ -16,7 +16,7 @@ const DOT: Record<LogEntry['kind'], string> = {
 export function ActivityLog() {
   const log = useStore((s) => s.log);
   const supported = useStore((s) => s.supported);
-  const endRef = useRef<HTMLDivElement>(null);
+  const endRef = useRef<HTMLLIElement>(null);
   const [openId, setOpenId] = useState<string | null>(null);
 
   useEffect(() => { endRef.current?.scrollIntoView({ block: 'end' }); }, [log.length]);
@@ -63,7 +63,7 @@ export function ActivityLog() {
             </li>
           );
         })}
-        <div ref={endRef} />
+        <li ref={endRef} aria-hidden className="h-px" />
       </ol>
     </section>
   );

@@ -64,15 +64,19 @@ export function DataTable() {
       </div>
 
       {visible.length === 0 && (
-        <p className="px-4 py-10 text-center text-[13px] text-ink-muted">No rows match this view.</p>
+        <div role="row">
+          <p role="gridcell" className="px-4 py-10 text-center text-[13px] text-ink-muted">No rows match this view.</p>
+        </div>
       )}
 
       {groups.map((g, gi) => (
         <div key={g.key ?? gi}>
           {g.key !== null && (
-            <div className="sticky top-8 z-[5] flex h-7 items-center gap-2 border-b border-rule bg-ground/95 px-3 text-[12px] backdrop-blur" role="row">
-              <span className="font-medium">{g.key}</span>
-              <span className="font-mono text-[11px] text-ink-muted">{g.rows.length}</span>
+            <div className="sticky top-8 z-[5] border-b border-rule bg-ground/95 backdrop-blur" role="row">
+              <div role="gridcell" aria-colspan={COLUMNS.length + 1} className="flex h-7 items-center gap-2 px-3 text-[12px]">
+                <span className="font-medium">{g.key}</span>
+                <span className="font-mono text-[11px] text-ink-muted">{g.rows.length}</span>
+              </div>
             </div>
           )}
           {g.rows.map((r) => {

@@ -1,0 +1,24 @@
+# Handoff
+
+> A shared workspace where your agent is a visible collaborator, not a black box. A dense customer-feedback triage table where an AI agent works next to a human through WebMCP tools registered on document.modelContext.
+
+Handoff exposes ten WebMCP tools. Five are always available; five appear and disappear with application state. When the human is editing a cell, the write tools are unregistered and calls are refused. Destructive writes are proposals the human reviews as inline diffs. Every call is logged on screen.
+
+## Tools
+
+- get_workspace_state: row counts, active view, selections, pending proposals, who holds control. Read-only.
+- get_column_schema: columns, allowed values and guidance for area, severity and status. Read-only.
+- read_rows: filtered, paginated rows (max 50). Read-only; returns third-party text (untrustedContentHint).
+- focus_cells: moves the visible agent cursor to rows and shows a reason.
+- set_view: changes the filter, sort or grouping the human sees.
+- propose_edits: batch of cell edits shown as diffs, applied only when the human accepts. Available unless the human is editing.
+- annotate: appends a note to a row immediately. Available unless the human is editing.
+- request_control: asks the human, via a dialog, for permission to apply edits directly.
+- get_proposal_status: what the human accepted and rejected from a proposal. Available once a proposal exists.
+- hand_back: returns edit control to the human. Available while the agent holds control.
+
+## Links
+
+- Source: https://github.com/chessoren/handoff
+- Live: https://handoff-webmcp.netlify.app
+- Built for The WebMCP Challenge: https://webmcp.devpost.com

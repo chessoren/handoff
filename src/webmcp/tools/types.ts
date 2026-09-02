@@ -17,7 +17,7 @@ export const FILTER_SCHEMA = {
   description: 'Keep only rows where a column matches.',
   properties: {
     columnId: { type: 'string', enum: ['source', 'received', 'text', 'area', 'severity', 'status', 'notes'] },
-    op: { type: 'string', enum: ['equals', 'contains', 'isEmpty'], description: '"isEmpty" needs no value.' },
+    op: { type: 'string', enum: ['equals', 'contains', 'isEmpty', 'oneOf'], description: '"isEmpty" needs no value. "oneOf" takes comma-separated values, e.g. "P0,P1".' },
     value: { type: 'string', description: 'Text to match. Case-insensitive.' },
   },
   required: ['columnId', 'op'],

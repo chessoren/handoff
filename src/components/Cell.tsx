@@ -35,7 +35,7 @@ export function Cell({ row, col, agentFocused }: Props) {
   if (isEditing && editable) {
     return (
       <div className={`${base} ring-2 ring-inset ring-human`} data-col={col.id} role="gridcell">
-        <Editor col={col} initial={value == null ? '' : String(value)} onCommit={(v) => { setCell(row.id, col.id as EditableColumnId, col.values ? (v || null) : v, 'human'); endEdit(); }} onCancel={endEdit} />
+        <Editor col={col} initial={value == null ? '' : String(value)} onCommit={(v) => { const next = col.values ? (v || null) : v; if (next !== (value ?? (col.values ? null : ''))) setCell(row.id, col.id as EditableColumnId, next, 'human'); endEdit(); }} onCancel={endEdit} />
       </div>
     );
   }
