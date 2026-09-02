@@ -11,7 +11,7 @@
  * dynamic on purpose: which tools exist *is* the product behaviour.
  */
 import { useStore } from '../store/useStore';
-import { isWebMCPSupported, modelContext } from './support';
+import { isWebMCPSupported, modelContext, webmcpCapabilities } from './support';
 import { hand_back, request_control } from './tools/control';
 import { focus_cells, set_view } from './tools/presence';
 import { get_column_schema, get_workspace_state, read_rows } from './tools/read';
@@ -142,6 +142,7 @@ export function startRegistry(): () => void {
   const store = useStore.getState();
   store.setSupported(isWebMCPSupported());
   if (!isWebMCPSupported()) return () => { started = false; };
+  store.appendLog({ kind: 'system', summary: `WebMCP detected: ${navigator.userAgent.slice(0, 80)}`, detail: { userAgent: navigator.userAgent, capabilities: webmcpCapabilities() } });
   const unsub = useStore.subscribe(
     (s) => `${s.control}|${s.proposals.length > 0}|${s.controlRequest !== null}`,
     () => { void syncTools(); },

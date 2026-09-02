@@ -15,6 +15,17 @@ export function isWebMCPSupported(): boolean {
   );
 }
 
+/** Some agents implement a subset of the API. Probe each optional member. */
+export function webmcpCapabilities() {
+  const mc = typeof document !== 'undefined' ? document.modelContext : undefined;
+  return {
+    registerTool: typeof mc?.registerTool === 'function',
+    getTools: typeof mc?.getTools === 'function',
+    toolchange: typeof mc?.addEventListener === 'function',
+    executeTool: typeof (mc as { executeTool?: unknown } | undefined)?.executeTool === 'function',
+  };
+}
+
 export function modelContext(): WebMCP.ModelContext {
   const mc = document.modelContext;
   if (!mc) throw new Error('WebMCP is not available in this browser');
