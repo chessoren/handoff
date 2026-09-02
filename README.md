@@ -158,7 +158,7 @@ node scripts/gen-feedback.mjs   # regenerate src/data/feedback.json
 
 **In Chrome 152** (`--enable-experimental-web-platform-features`), the full scenario runs headless through `document.modelContext.executeTool()`: strict validation errors, per-edit rejection reaching `get_proposal_status`, tool withdrawal on edit, the elicitation timeout path, `hand_back` withdrawing itself, and state surviving a reload.
 
-**Lighthouse** (agentic browsing audits, run against the live URL): "WebMCP tools registered" lists the eight boot-time tools with their schemas, "WebMCP schemas are valid" passes, accessibility 100.
+**Lighthouse** (agentic browsing audits, run against the live URL): "WebMCP tools registered" lists the eight boot-time tools with their schemas, "WebMCP schemas are valid" passes. Scores: agentic browsing 100, accessibility 100, best practices 100, performance 98.
 
 ![Lighthouse: Registered WebMCP tools](docs/lighthouse-webmcp-tools.png)
 
