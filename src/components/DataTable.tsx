@@ -48,17 +48,17 @@ export function DataTable() {
         {COLUMNS.map((c) => {
           const sorted = view.sortBy?.columnId === c.id;
           return (
-            <button
-              key={c.id}
-              type="button"
-              role="columnheader"
-              aria-sort={sorted ? (view.sortBy!.direction === 'asc' ? 'ascending' : 'descending') : 'none'}
-              onClick={() => toggleSort(c.id)}
-              className="flex h-8 items-center gap-1 border-r border-rule px-2 text-left hover:bg-ground/60 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-human"
-            >
-              {c.label}
-              {sorted && (view.sortBy!.direction === 'asc' ? <ArrowUp className="size-3" aria-hidden /> : <ArrowDown className="size-3" aria-hidden />)}
-            </button>
+            <div key={c.id} role="columnheader" aria-sort={sorted ? (view.sortBy!.direction === 'asc' ? 'ascending' : 'descending') : 'none'} className="border-r border-rule">
+              <button
+                type="button"
+                onClick={() => toggleSort(c.id)}
+                aria-label={`Sort by ${c.label}`}
+                className="flex h-8 w-full items-center gap-1 px-2 text-left uppercase hover:bg-ground/60 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-human"
+              >
+                {c.label}
+                {sorted && (view.sortBy!.direction === 'asc' ? <ArrowUp className="size-3" aria-hidden /> : <ArrowDown className="size-3" aria-hidden />)}
+              </button>
+            </div>
           );
         })}
       </div>

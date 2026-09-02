@@ -17,8 +17,13 @@ Handoff exposes ten WebMCP tools. Five are always available; five appear and dis
 - get_proposal_status: what the human accepted and rejected from a proposal. Available once a proposal exists.
 - hand_back: returns edit control to the human. Available while the agent holds control.
 
-## Links
+## Docs
 
-- Source: https://github.com/chessoren/handoff
-- Live: https://handoff-webmcp.netlify.app
-- Built for The WebMCP Challenge: https://webmcp.devpost.com
+- [README](https://github.com/chessoren/handoff#readme): tools table, control lock mechanism, architecture.
+- [Source code](https://github.com/chessoren/handoff): MIT-licensed repository.
+- [Live workspace](https://handoff-webmcp.netlify.app): the app itself; needs a WebMCP-capable browser.
+
+## Optional
+
+- [The WebMCP Challenge](https://webmcp.devpost.com): the hackathon this was built for.
+- [WebMCP on Chrome for Developers](https://developer.chrome.com/docs/ai/webmcp): the API reference.
