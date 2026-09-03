@@ -162,6 +162,10 @@ node scripts/gen-feedback.mjs   # regenerate src/data/feedback.json
 
 ![Lighthouse: Registered WebMCP tools](docs/lighthouse-webmcp-tools.png)
 
+## Handoff and Sidecar
+
+Two submissions, two ends of one question: how far does an agent's authority reach inside an application? Handoff gives the agent write tools, then withdraws them at the protocol level the moment the human's hands are on the wheel. [Sidecar](https://github.com/chessoren/sidecar) never gives them at all, and hands the agent the tempo of the collaboration instead: its `wait_for_human` call stays open until the applicant's own keystroke closes it.
+
 ## License
 
 MIT © 2026 Oren Chriqui
